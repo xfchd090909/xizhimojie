@@ -1,72 +1,72 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>细枝末节网</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            primary: '#6366F1',
-            secondary: '#EC4899',
-            accent: '#8B5CF6',
+<！doctype 超文本标记语言>
+<超文本标记语言<html<html lang="zh-CN">朗="zh-CN">朗="zh-CN">
+<头>
+  <元 字符集="UTF-8">
+  <元 姓名="视口" 内容="宽度=设备宽度，初始比例=1.0">
+  <标题>细枝末节网</标题>
+  <脚本 src="https://cdn.tailwindcss.com"></脚本>
+  <链接 href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="样式表">
+  <脚本>
+顺风.配置 = {
+主题: {
+延伸: {
+颜色: {
+主要的：'#6366F1'，
+次要的：'#EC4899’，
+语音：'#8B5CF6'，
           },
-          fontFamily: {
-            sans: ['Inter', 'system-ui', 'sans-serif'],
+fontFamily：{
+sans：['Inter'，'system-ui'，'无衬线']，
           },
         },
       }
     }
-  </script>
-  <style type="text/tailwindcss">
-    @layer utilities {
-      .content-auto {
-        content-visibility: auto;
+  </脚本>
+<风格 类型="text/tailwindcss"><风格<风格类型="text/tailwindcss">类型="text/tailwindcss">
+@层实用程序{
+.content-auto{
+内容-可见性：自动；
       }
-      .bg-gradient-dynamic {
-        background: linear-gradient(45deg, #6366F1, #EC4899, #8B5CF6, #10B981);
-        background-size: 400% 400%;
-        animation: gradient 15s ease infinite;
+.bg-梯度-动态{
+背景：线性梯度(45度，#6366F1，#EC4899，#8B5CF6，#10B981)；
+背景尺寸：400%400%；
+动画：渐变15s轻松无限；
       }
-      .nav-blur {
-        backdrop-filter: blur(8px);
+.nav-blur{
+背景滤镜：模糊(8px)；
       }
-      .text-shadow {
-        text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+.text-shadow{
+text-shadow:02px4px rgba(0,0,0,0.1);
       }
-      .flip-in {
-        animation: flipIn 0.6s cubic-bezier(0.215, 0.610, 0.355, 1.000) forwards;
+.flip-in{
+动画：正向翻转0.6s立方比塞尔(0.215，0.610，0.355，1.000)；
       }
-      .flip-out {
-        animation: flipOut 0.6s cubic-bezier(0.550, 0.055, 0.675, 0.190) forwards;
+.flip-out{
+动画：翻页0.6s立方体-贝塞尔(0.550，0.055，0.675，0.190)向前；
       }
-      .card-hover {
-        transition: all 0.3s ease;
+.card-hover{
+过渡：所有0.3s轻松；
       }
-      .card-hover:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+.card-hover:hover{
+变换：translateY(-5px)；
+盒阴影：010px25px-5pxrgba(0，0，0，0.1)，010px10px-5pxrgba(0，0，0，0.04)；
       }
     }
 
-    @keyframes gradient {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
+@keyframes 渐变{
+0%{后台位置：0%50%；}
+50%{背景位置：100%50%；}
+100%{后台位置：0%50%；}
     }
 
-    @keyframes flipIn {
-      0% { transform: perspective(800px) rotateY(90deg); opacity: 0; }
-      40% { transform: perspective(800px) rotateY(-20deg); }
-      100% { transform: perspective(800px) rotateY(0deg); opacity: 1; }
+@keyframes 翻转{
+0%{transform：透视(800px)rotateY(90度)；不透明度：0；}
+40%{transform：透视(800px)rotateY(-20度)；}
+100%{transform：透视(800px)rotateY(0deg)；不透明度：1；}
     }
 
-    @keyframes flipOut {
-      0% { transform: perspective(800px) rotateY(0deg); opacity: 1; }
+@keyframes 翻转{
+0%{transform：透视(800px)rotateY(0deg)；不透明度：1；}
       40% { transform: perspective(800px) rotateY(20deg); }
       100% { transform: perspective(800px) rotateY(90deg); opacity: 0; }
     }
@@ -76,6 +76,10 @@
   <!-- 透明导航栏 -->
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-blur bg-white/10">
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
+  <!-- 主页代码 -->
+      <a href="https://xfchd090909.github.io/xizhimojie/" class="text-white/70 hover:text-white transition-colors mr-4">
+        <i class="fa fa-home fa-lg"></i>
+      </a>
       <!-- 左侧：作者头像及昵称 -->
       <div class="flex items-center space-x-3">
         <div class="w-10 h-10 rounded-full bg-white/20 overflow-hidden border border-white/30">
