@@ -69,10 +69,14 @@
   <!-- 透明导航栏 -->
   <header class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 nav-blur bg-white/10">
     <div class="container mx-auto px-4 py-3">
+      <!-- 左侧：房子图标 + 作者头像及昵称 -->
       <div class="flex items-center space-x-7">
+        <!-- 房子图标链接 -->
         <a href="https://xfchd090909.github.io/xizhimojie/" class="text-white/70 hover:text-white transition-colors">
           <i class="fa fa-home fa-lg"></i>
         </a>
+        
+        <!-- 作者头像及昵称 -->
         <div class="flex items-center space-x-3">
           <div class="w-10 h-10 rounded-full bg-white/20 overflow-hidden border border-white/30">
             <img src="https://raw.githubusercontent.com/xfchd090909/xizhimojie/main/avatar/mmexport1749912260190.jpg" alt="作者头像" class="w-full h-full object-cover">
@@ -196,51 +200,172 @@
       </button>
       <h3 class="text-xl font-bold text-gray-800 mb-4">分享到</h3>
       <div class="space-y-3 text-gray-700">
-        <!-- 国内应用 -->
-        <div class="pt-2 border-t border-gray-100">
-          <p class="text-xs text-gray-500 mb-2">国内应用</p>
-          <div class="flex items-center">
-            <i class="fa fa-qq text-primary mr-3"></i>
-            <button id="qqShareBtn" class="hover:text-primary flex items-center">
-              <span>QQ</span>
-            </button>
-          </div>
+        <div class="flex items-center">
+          <i class="fa fa-qq text-primary mr-3"></i>
+          <a href="http://connect.qq.com/widget/shareqq/index.html?url=https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html&title=马斯克的GrokAI让日本网友集体破防&desc=X平台AI因不当言论引发争议" target="_blank" class="hover:text-primary">QQ</a>
         </div>
-        
-        <!-- 国际应用 -->
-        <div class="pt-2 border-t border-gray-100">
-          <p class="text-xs text-gray-500 mb-2">国际应用</p>
-          <div class="flex items-center">
-            <i class="fa fa-telegram text-accent mr-3"></i>
-            <a href="https://t.me/share/url?url=https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html&text=马斯克的GrokAI让日本网友集体破防 - X平台AI因不当言论引发争议" target="_blank" class="hover:text-accent">Telegram</a>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-commenting text-secondary mr-3"></i>
-            <a href="https://line.me/R/msg/text/?马斯克的GrokAI让日本网友集体破防 - X平台AI因不当言论引发争议 https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html" target="_blank" class="hover:text-secondary">LINE</a>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-facebook text-primary mr-3"></i>
-            <a href="https://www.facebook.com/sharer/sharer.php?u=https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html" target="_blank" class="hover:text-primary">Facebook</a>
-          </div>
-          <div class="flex items-center">
-            <i class="fa fa-whatsapp text-accent mr-3"></i>
-            <a href="whatsapp://send?text=马斯克的GrokAI让日本网友集体破防 - X平台AI因不当言论引发争议 https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html" target="_blank" class="hover:text-accent">Whatsapp</a>
-          </div>
+        <div class="flex items-center">
+          <i class="fa fa-telegram text-accent mr-3"></i>
+          <a href="https://t.me/share/url?url=https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html&text=马斯克的GrokAI让日本网友集体破防 - X平台AI因不当言论引发争议" target="_blank" class="hover:text-accent">Telegram</a>
         </div>
-        
-        <!-- 分享链接 -->
-        <div class="pt-2 border-t border-gray-100">
-          <div class="flex items-center">
-            <i class="fa fa-link text-secondary mr-3"></i>
-            <button id="copyLinkBtn" class="hover:text-secondary">分享链接</button>
-          </div>
+        <div class="flex items-center">
+          <i class="fa fa-commenting text-secondary mr-3"></i>
+          <a href="https://line.me/R/msg/text/?马斯克的GrokAI让日本网友集体破防 - X平台AI因不当言论引发争议 https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html" target="_blank" class="hover:text-secondary">LINE</a>
+        </div>
+        <div class="flex items-center">
+          <!-- 修改了这里的图标 -->
+          <i class="fa fa-facebook text-primary mr-3"></i>
+          <a href="https://www.facebook.com/sharer/sharer.php?u=https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html" target="_blank" class="hover:text-primary">Facebook</a>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-whatsapp text-accent mr-3"></i>
+          <a href="whatsapp://send?text=马斯克的GrokAI让日本网友集体破防 - X平台AI因不当言论引发争议 https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html" target="_blank" class="hover:text-accent">Whatsapp</a>
+        </div>
+        <div class="flex items-center">
+          <i class="fa fa-link text-secondary mr-3"></i>
+          <button id="copyLinkBtn" class="hover:text-secondary">分享链接</button>
         </div>
       </div>
       <p class="text-sm text-gray-500 mt-4">因国内软件审查机制严格，网站暂不提供 微信 等部分软件分享方式，你可使用分享链接来分享这篇文章</p>
     </div>
   </div>
 
-  <!-- 电脑端QQ分享提示弹窗 -->
-  <div id="pcQQTipModal" class="fixed inset-0 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
-    <div class="absolute inset-0 bg-black/50" id="pcQQTipOverlay"></div>
-    <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-md mx-4 p-6 transform origin-center opacity-0 perspective
+  <!-- 复制链接成功弹窗 -->
+  <div id="copySuccessModal" class="fixed inset-0 flex items-center justify-center z-50 opacity-0 pointer-events-none transition-opacity duration-300">
+    <div class="absolute inset-0 bg-black/50" id="copySuccessModalOverlay"></div>
+    <div class="relative bg-white rounded-xl shadow-2xl w-full max-w-md mx-4 p-6 transform origin-center opacity-0 perspective-800" id="copySuccessModalContent">
+      <button id="closeCopySuccessModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700">
+        <i class="fa fa-times"></i>
+      </button>
+      <h3 class="text-xl font-bold text-gray-800 mb-4">复制成功</h3>
+      <p class="text-gray-700">链接已复制到剪贴板</p>
+    </div>
+  </div>
+
+  <script>
+    // 导航栏滚动效果
+    window.addEventListener('scroll', function() {
+      const header = document.querySelector('header');
+      if (window.scrollY > 50) {
+        header.classList.add('bg-white/20', 'shadow-md');
+        header.classList.remove('bg-white/10');
+      } else {
+        header.classList.remove('bg-white/20', 'shadow-md');
+        header.classList.add('bg-white/10');
+      }
+    });
+
+    // 邮箱弹窗功能
+    const emailBtn = document.getElementById('emailBtn');
+    const emailModal = document.getElementById('emailModal');
+    const modalContent = document.getElementById('modalContent');
+    const closeModal = document.getElementById('closeModal');
+    const modalOverlay = document.getElementById('modalOverlay');
+
+    function openModal() {
+      emailModal.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        modalContent.classList.add('flip-in');
+        modalContent.classList.remove('opacity-0');
+      }, 100);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModalFunc() {
+      modalContent.classList.add('flip-out');
+      setTimeout(() => {
+        emailModal.classList.add('opacity-0', 'pointer-events-none');
+        modalContent.classList.remove('flip-in', 'flip-out');
+      }, 600);
+      document.body.style.overflow = '';
+    }
+
+    emailBtn.addEventListener('click', openModal);
+    closeModal.addEventListener('click', closeModalFunc);
+    modalOverlay.addEventListener('click', closeModalFunc);
+
+    // 按ESC键关闭弹窗
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !emailModal.classList.contains('opacity-0')) {
+        closeModalFunc();
+      }
+    });
+
+    // 分享弹窗功能
+    const shareBtn = document.getElementById('shareBtn');
+    const shareModal = document.getElementById('shareModal');
+    const shareModalContent = document.getElementById('shareModalContent');
+    const closeShareModal = document.getElementById('closeShareModal');
+    const shareModalOverlay = document.getElementById('shareModalOverlay');
+
+    function openShareModal() {
+      shareModal.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        shareModalContent.classList.add('flip-in');
+        shareModalContent.classList.remove('opacity-0');
+      }, 100);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeShareModalFunc() {
+      shareModalContent.classList.add('flip-out');
+      setTimeout(() => {
+        shareModal.classList.add('opacity-0', 'pointer-events-none');
+        shareModalContent.classList.remove('flip-in', 'flip-out');
+      }, 600);
+      document.body.style.overflow = '';
+    }
+
+    shareBtn.addEventListener('click', openShareModal);
+    closeShareModal.addEventListener('click', closeShareModalFunc);
+    shareModalOverlay.addEventListener('click', closeShareModalFunc);
+
+    // 复制链接功能
+    const copyLinkBtn = document.getElementById('copyLinkBtn');
+    const copySuccessModal = document.getElementById('copySuccessModal');
+    const copySuccessModalContent = document.getElementById('copySuccessModalContent');
+    const closeCopySuccessModal = document.getElementById('closeCopySuccessModal');
+    const copySuccessModalOverlay = document.getElementById('copySuccessModalOverlay');
+
+    function openCopySuccessModal() {
+      copySuccessModal.classList.remove('opacity-0', 'pointer-events-none');
+      setTimeout(() => {
+        copySuccessModalContent.classList.add('flip-in');
+        copySuccessModalContent.classList.remove('opacity-0');
+      }, 100);
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCopySuccessModalFunc() {
+      copySuccessModalContent.classList.add('flip-out');
+      setTimeout(() => {
+        copySuccessModal.classList.add('opacity-0', 'pointer-events-none');
+        copySuccessModalContent.classList.remove('flip-in', 'flip-out');
+      }, 600);
+      document.body.style.overflow = '';
+    }
+
+    copyLinkBtn.addEventListener('click', () => {
+      const link = 'https://xfchd090909.github.io/xizhimojie/202507111224/202507111224.html';
+      navigator.clipboard.writeText(link).then(() => {
+        openCopySuccessModal();
+      }).catch((err) => {
+        console.error('复制链接失败: ', err);
+      });
+    });
+
+    closeCopySuccessModal.addEventListener('click', closeCopySuccessModalFunc);
+    copySuccessModalOverlay.addEventListener('click', closeCopySuccessModalFunc);
+
+    // 按ESC键关闭分享弹窗和复制成功弹窗
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !shareModal.classList.contains('opacity-0')) {
+        closeShareModalFunc();
+      }
+      if (e.key === 'Escape' && !copySuccessModal.classList.contains('opacity-0')) {
+        closeCopySuccessModalFunc();
+      }
+    });
+  </script>
+</body>
+</html>
